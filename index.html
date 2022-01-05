@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Red Square - The agency for what comes next.</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <div class="shapes">
+            <div class="red-square"></div>
+            <div class="yellow-triangle"></div>
+            <div class="blue-circle"></div>
+          </div>
+
+          <p class="disappear">RedSquare</p>
+        </div>
+
+        <div class="work">
+          <a href=""
+            >Work
+            <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+          </a>
+          <div class="blurred-bg"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero-text-wrapper">
+      <h1 class="hero-text">
+        <span>The </span><span>agency </span><span>for </span><span>what </span
+        ><span>comes </span><span>next.</span>
+      </h1>
+    </div>
+
+    <section class="image-carousel">
+      <img src="./images/wafflestop.jpg" alt="" />
+    </section>
+
+    <article class="article">
+      <h2>We deal in ideas, design and media that are category defying.</h2>
+      <p>
+        Red Square believes in rigorous development of brand strategy and
+        whip-smart execution. We make all sorts of things. Things that move
+        markets, compel audiences and sell product. Sometimes these things are
+        ads.
+      </p>
+    </article>
+
+    <div class="gray-line"></div>
+
+    <section class="clients-list">
+      <p>Select Clients</p>
+      <ul class="list-one">
+        <li>Cherokee Casinos</li>
+        <li>Flipboard</li>
+        <li>Foxwoods</li>
+        <li>Glanbia Nutritionals</li>
+        <li>Google</li>
+        <li>Hard Rock</li>
+        <li>Hibbett Sports</li>
+        <li>Hilton Worldwide</li>
+        <li>Jack Daniel’s</li>
+      </ul>
+      <ul>
+        <li>Nescafé</li>
+        <li>New York Pride</li>
+        <li>Patreon</li>
+        <li>Rivers Casino</li>
+        <li>Snickers</li>
+        <li>Southern Comfort</li>
+        <li>University of Alabama</li>
+        <li>Twix</li>
+        <li>Wind Creek Hospitality</li>
+      </ul>
+    </section>
+
+    <div class="gray-line"></div>
+
+    <section class="contact">
+      <a href="mailto:" class="tilt">
+        <h2>Let's talk.</h2>
+        <h2>hi@rsq.com</h2>
+      </a>
+
+      <div class="socials">
+        <ul class="top">
+          <li class="nugs"><ion-icon name="add-circle"></ion-icon>Nugs.</li>
+          <li><ion-icon name="logo-instagram"></ion-icon></li>
+          <li><ion-icon name="logo-twitter"></ion-icon></li>
+          <li><ion-icon name="logo-linkedin"></ion-icon></li>
+        </ul>
+        <ul class="bottom">
+          <li>Mobile, AL</li>
+          <li>Chicago, IL</li>
+          <li>Tulsa, OK</li>
+        </ul>
+      </div>
+    </section>
+
+    <a href="" class="all-projects">
+      <h4>All Projects</h4>
+      <p>
+        Work <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+      </p>
+    </a>
+
+    <!-- ion-icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"
+      integrity="sha512-Aa3UvVB5yhH/dNXMt8nGZDD15Xmntq1ODcavfgT8omSLaomrJKYybWczzc6UJYDUAdqR1hmDJ47V4Ux50PPIuw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+      integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector('.tilt'), {
+        max: 15,
+        speed: 100,
+        reverse: true,
+        perspective: 5000,
+      });
+    </script>
+  </body>
+</html>
