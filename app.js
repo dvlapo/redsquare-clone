@@ -50,7 +50,8 @@ setTimeout(() => {
   nav.style.marginBottom = '20rem';
 }, 3000);
 
-let listItems = [...document.querySelectorAll('.clients-list > ul li')];
+let listItems = [...document.querySelectorAll('.clients-list ul li')];
+let mobileListItems = [...document.querySelectorAll('.mobile-list li')];
 let fadeUpItems = [
   ...document.querySelectorAll('.article h2, .article p, .contact'),
 ];
@@ -94,6 +95,9 @@ const linesObserver = new IntersectionObserver(scaleLine, {
 });
 
 listItems.forEach((item) => {
+  fadeInObserver.observe(item);
+});
+mobileListItems.forEach((item) => {
   fadeInObserver.observe(item);
 });
 fadeUpItems.forEach((item) => {

@@ -187,7 +187,7 @@ nav a ion-icon {
 
 @media (max-width: 450px) {
   .gray-line {
-    width: 80vw;
+    width: 85vw;
   }
 }
 
@@ -200,12 +200,18 @@ nav a ion-icon {
   margin: 10vw auto 3rem auto;
   position: relative;
   font-weight: 600;
-  margin-top: 12rem;
+  margin-top: 16rem;
 }
 
 @media (max-width: 450px) {
   .article {
     max-width: 85vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .article {
+    margin-top: 12rem;
   }
 }
 
@@ -263,6 +269,13 @@ nav a ion-icon {
   }
 }
 
+@media (max-width: 450px) {
+  .clients-list .list-one,
+  .clients-list .list-two {
+    display: none;
+  }
+}
+
 .clients-list p {
   color: #858585;
   font-size: clamp(1rem, 1.2vw, 2rem);
@@ -276,6 +289,29 @@ nav a ion-icon {
     flex-basis: 100%;
     margin-bottom: 0.6rem;
   }
+}
+
+.clients-list .mobile-list {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .clients-list .mobile-list {
+    display: block;
+  }
+}
+
+.clients-list .mobile-list * {
+  font-size: clamp(1.2rem, 1.6vw, 2rem);
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  transform: translateX(-10rem);
+  transition: 1000ms;
+}
+
+.clients-list .mobile-list .fades-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media (max-width: 985px) {
@@ -297,7 +333,7 @@ nav a ion-icon {
 
 .clients-list ul li {
   font-size: clamp(1.2rem, 1.6vw, 2rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   opacity: 0;
   transform: translateX(-10rem);
   transition: 1000ms;
@@ -478,7 +514,7 @@ nav a ion-icon {
 @media (max-width: 450px) {
   .all-projects {
     width: 100vw;
-    height: 18vh;
+    height: 19vh;
     border-radius: 0;
     justify-content: center;
     transform: none;
