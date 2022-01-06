@@ -93,8 +93,37 @@ lines.forEach((line) => {
   linesObserver.observe(line);
 });
 
-// vanilla tilt
-VanillaTilt.init(document.querySelector('.tilt'), {
-  max: 25,
-  speed: 400,
+// blur on hover
+const logo = document.querySelector('.logo');
+const work = document.querySelector('.work a');
+const tilt = document.querySelector('.tilt');
+const grayLine = document.querySelector('.line-two');
+const socials = document.querySelector('.socials');
+const clientsList = document.querySelector('.clients-list');
+const allProjects = document.querySelector('.all-projects');
+
+work.addEventListener('mouseover', () => {
+  logo.style.filter = 'blur(6px)';
+  heroText.style.filter = 'blur(6px)';
+  imageCarousel.style.filter = 'blur(6px)';
+});
+
+tilt.addEventListener('mouseover', () => {
+  grayLine.style.filter = 'blur(1px)';
+  socials.style.filter = 'blur(6px)';
+  clientsList.style.filter = 'blur(6px)';
+  allProjects.style.filter = 'blur(6px)';
+});
+
+work.addEventListener('mouseleave', () => {
+  logo.style.filter = 'none';
+  heroText.style.filter = 'none';
+  imageCarousel.style.filter = 'none';
+});
+
+tilt.addEventListener('mouseleave', () => {
+  grayLine.style.filter = 'none';
+  socials.style.filter = 'none';
+  clientsList.style.filter = 'none';
+  allProjects.style.filter = 'none';
 });
