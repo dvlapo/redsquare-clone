@@ -103,16 +103,16 @@ const clientsList = document.querySelector('.clients-list');
 const allProjects = document.querySelector('.all-projects');
 
 work.addEventListener('mouseover', () => {
-  logo.style.filter = 'blur(6px)';
-  heroText.style.filter = 'blur(6px)';
-  imageCarousel.style.filter = 'blur(6px)';
+  logo.style.filter = 'blur(5px)';
+  heroText.style.filter = 'blur(5px)';
+  imageCarousel.style.filter = 'blur(5px)';
 });
 
 tilt.addEventListener('mouseover', () => {
   grayLine.style.filter = 'blur(1px)';
-  socials.style.filter = 'blur(6px)';
-  clientsList.style.filter = 'blur(6px)';
-  allProjects.style.filter = 'blur(6px)';
+  socials.style.filter = 'blur(5px)';
+  clientsList.style.filter = 'blur(5px)';
+  allProjects.style.filter = 'blur(5px)';
 });
 
 work.addEventListener('mouseleave', () => {
