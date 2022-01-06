@@ -18,17 +18,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 76vw;
+  width: 75vw;
   margin-inline: auto;
-  margin-top: 15vh;
+  margin-top: 8vw;
+  margin-bottom: 25rem;
+  transition: 1500ms;
 }
 
 @media (max-width: 450px) {
   nav {
-    margin-top: 3rem;
-    margin-bottom: 30rem;
-    width: 80vw;
+    width: 85vw;
   }
+}
+
+nav .work {
+  visibility: hidden;
 }
 
 nav .logo {
@@ -48,7 +52,7 @@ nav .logo .shapes * {
 }
 
 nav .logo .blue-circle {
-  width: 1.9rem;
+  width: 2rem;
   aspect-ratio: 1;
   background-color: #5586ee;
   border-radius: 50%;
@@ -57,14 +61,14 @@ nav .logo .blue-circle {
 nav .logo .yellow-triangle {
   width: 0;
   height: 0;
-  border-bottom: 1.9rem solid yellow;
-  border-left: 0.95rem solid transparent;
-  border-right: 0.95rem solid transparent;
+  border-bottom: 2rem solid yellow;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   display: none;
 }
 
 nav .logo .red-square {
-  width: 1.9rem;
+  width: 2rem;
   aspect-ratio: 1;
   background-color: #e31e3c;
   display: none;
@@ -110,7 +114,7 @@ nav a ion-icon {
 
 @media (max-width: 450px) {
   .hero-text-wrapper {
-    max-width: 80vw;
+    max-width: 85vw;
   }
 }
 
@@ -136,6 +140,8 @@ nav a ion-icon {
 
 .hero-text-wrapper .hero-text span {
   position: relative;
+  opacity: 0;
+  transition: 1500ms;
 }
 
 .image-carousel {
@@ -146,6 +152,11 @@ nav a ion-icon {
   overflow: hidden;
   transform: translateY(8rem);
   transition: 1000ms;
+  position: relative;
+}
+
+.image-carousel img {
+  display: none;
 }
 
 .image-carousel:hover * {
@@ -159,6 +170,9 @@ nav a ion-icon {
     width: 100vw;
     border-radius: 0;
   }
+  .image-carousel:hover * {
+    transform: scale(1);
+  }
 }
 
 .gray-line {
@@ -168,7 +182,7 @@ nav a ion-icon {
   background-color: #85858518;
   transform: scaleX(0);
   transform-origin: left;
-  transition: 1000ms;
+  transition: 2500ms;
 }
 
 @media (max-width: 450px) {
@@ -186,11 +200,12 @@ nav a ion-icon {
   margin: 10vw auto 3rem auto;
   position: relative;
   font-weight: 600;
+  margin-top: 12rem;
 }
 
 @media (max-width: 450px) {
   .article {
-    max-width: 80vw;
+    max-width: 85vw;
   }
 }
 
@@ -201,14 +216,14 @@ nav a ion-icon {
 .article h2 {
   font-size: clamp(1.6rem, 5.8vw, 4rem);
   line-height: 1.4;
-  margin-bottom: clamp(0rem, 10vw, 4rem);
+  margin-bottom: clamp(0rem, 8vw, 3rem);
   transform: translateY(1rem);
   opacity: 0;
 }
 
 .article p {
   font-size: clamp(1.2rem, 2vw, 2rem);
-  margin-bottom: clamp(0.1rem, 12vw, 4rem);
+  margin-bottom: clamp(0.1rem, 8vw, 3rem);
   line-height: 1.8;
   transform: translateY(1rem);
   opacity: 0;
@@ -233,17 +248,18 @@ nav a ion-icon {
   flex-wrap: wrap;
   padding-block: clamp(0, 12vw, 4rem);
   position: relative;
+  margin-top: 3rem;
 }
 
 @media (max-width: 450px) {
   .clients-list {
-    max-width: 80vw;
+    max-width: 85vw;
   }
 }
 
 @media (max-width: 450px) {
   .clients-list {
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -281,7 +297,7 @@ nav a ion-icon {
 
 .clients-list ul li {
   font-size: clamp(1.2rem, 1.6vw, 2rem);
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.5rem;
   opacity: 0;
   transform: translateX(-10rem);
   transition: 1000ms;
@@ -307,7 +323,7 @@ nav a ion-icon {
 
 @media (max-width: 450px) {
   .contact {
-    max-width: 80vw;
+    max-width: 85vw;
   }
 }
 

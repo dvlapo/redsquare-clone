@@ -19,6 +19,7 @@ const switchShapes = () => {
   const blueCircle = document.querySelector('.blue-circle');
   const yellowTriangle = document.querySelector('.yellow-triangle');
   const redSquare = document.querySelector('.red-square');
+  const work = document.querySelector('.work');
 
   setTimeout(() => {
     blueCircle.style.display = 'none';
@@ -29,15 +30,24 @@ const switchShapes = () => {
     yellowTriangle.style.display = 'none';
     redSquare.style.display = 'block';
   }, 2300);
+  setTimeout(() => {
+    work.style.visibility = 'visible';
+  }, 4300);
 };
 switchShapes();
 
-const heroText = document.querySelector('.hero-text');
 const imageCarousel = document.querySelector('.image-carousel');
+const nav = document.querySelector('nav');
+
+const heroText = [...document.querySelectorAll('.hero-text span')];
+heroText.forEach((text) => {
+  setInterval(() => {
+    text.style.opacity = '1';
+  }, 1000);
+});
 
 setTimeout(() => {
-  heroText.style.transform = 'translateY(0)';
-  imageCarousel.style.transform = 'translateY(0)';
+  nav.style.marginBottom = '20rem';
 }, 3000);
 
 let listItems = [...document.querySelectorAll('.clients-list > ul li')];
@@ -127,3 +137,28 @@ tilt.addEventListener('mouseleave', () => {
   clientsList.style.filter = 'none';
   allProjects.style.filter = 'none';
 });
+
+// slideshow
+let images = [...document.querySelectorAll('.image-carousel img')];
+let index = 1;
+
+const showOneImage = (n) => {
+  if (n > images.length) {
+    index = 1;
+  }
+  if (n < 1) {
+    index = images.length;
+  }
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = 'none';
+  }
+  images[index - 1].style.display = 'block';
+};
+
+const incrementIndex = (n) => {
+  showOneImage((index += n));
+};
+
+setInterval(() => {
+  incrementIndex(1);
+}, 200);
