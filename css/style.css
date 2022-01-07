@@ -20,7 +20,7 @@ nav {
   justify-content: space-between;
   width: 75vw;
   margin-inline: auto;
-  margin-top: 8vw;
+  margin-top: 5vw;
   margin-bottom: 25rem;
   transition: 1500ms;
 }
@@ -28,6 +28,7 @@ nav {
 @media (max-width: 450px) {
   nav {
     width: 85vw;
+    margin-top: 8vw;
   }
 }
 
@@ -39,6 +40,7 @@ nav .logo {
   display: flex;
   align-items: center;
   gap: 3rem;
+  transition: all 1000ms;
 }
 
 nav .logo .shapes {
@@ -110,6 +112,7 @@ nav a ion-icon {
   max-width: 75vw;
   margin: 10vw auto 3rem auto;
   margin-bottom: 8rem;
+  transition: all 1000ms;
 }
 
 @media (max-width: 450px) {
@@ -201,6 +204,7 @@ nav a ion-icon {
   position: relative;
   font-weight: 600;
   margin-top: 16rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 450px) {
@@ -254,7 +258,7 @@ nav a ion-icon {
   flex-wrap: wrap;
   padding-block: clamp(0, 12vw, 4rem);
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 450px) {
@@ -337,6 +341,10 @@ nav a ion-icon {
   opacity: 0;
   transform: translateX(-10rem);
   transition: 1000ms;
+}
+
+.clients-list ul li:last-child {
+  margin-bottom: 0;
 }
 
 .clients-list ul .fades-in {

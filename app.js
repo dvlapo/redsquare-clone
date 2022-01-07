@@ -47,7 +47,7 @@ heroText.forEach((text) => {
 });
 
 setTimeout(() => {
-  nav.style.marginBottom = '20rem';
+  nav.style.marginBottom = '18rem';
 }, 3000);
 
 let listItems = [...document.querySelectorAll('.clients-list ul li')];
@@ -109,6 +109,7 @@ lines.forEach((line) => {
 
 // blur on hover
 const logo = document.querySelector('.logo');
+const heroTextWrapper = document.querySelector('.hero-text-wrapper');
 const work = document.querySelector('.work a');
 const tilt = document.querySelector('.tilt');
 const grayLine = document.querySelector('.line-two');
@@ -118,7 +119,7 @@ const allProjects = document.querySelector('.all-projects');
 
 work.addEventListener('mouseover', () => {
   logo.style.filter = 'blur(5px)';
-  heroText.style.filter = 'blur(5px)';
+  heroTextWrapper.style.filter = 'blur(5px)';
   imageCarousel.style.filter = 'blur(5px)';
 });
 
@@ -131,7 +132,7 @@ tilt.addEventListener('mouseover', () => {
 
 work.addEventListener('mouseleave', () => {
   logo.style.filter = 'none';
-  heroText.style.filter = 'none';
+  heroTextWrapper.style.filter = 'none';
   imageCarousel.style.filter = 'none';
 });
 
