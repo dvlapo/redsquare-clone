@@ -152,7 +152,7 @@ const showOneImage = (n) => {
       index = 1;
    }
    if (n < 1) {
-      index = images.length - 1;
+      index = images.length;
    }
    for (i = 0; i < images.length; i++) {
       images[i].style.display = 'none';
