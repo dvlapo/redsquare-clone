@@ -133,6 +133,7 @@ nav a ion-icon {
   line-height: 1.05;
   transform: translateY(8rem);
   transition: 1000ms;
+  letter-spacing: 10px;
 }
 
 @media (max-width: 450px) {
